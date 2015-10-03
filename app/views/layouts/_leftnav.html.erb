@@ -1,0 +1,7 @@
+	<ul>
+		<% @note_pads.each do |note_pad| %>
+		<li>
+			<%= link_to(note_pad.title, {:action => 'show', :id => note_pad.id}) %></li>
+		</li>
+		<% end %>
+	</ul>

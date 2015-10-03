@@ -1,0 +1,14 @@
+<div id="part">
+	<h1>Delete Note</h1>
+	<%= link_to("Back to Note", {:action => 'show', :id => @note_pad.id}) %>
+
+	<%= form_for(:note_pad,:url => {:action => 'destroy', :id => @note_pad.id}) do |f| %>
+		<p>Are you sure you want to permanently delete this Note?</p>
+		<p class="reference-name"><%= @note_pad.title %></p>
+
+		<div class="form-buttons">
+			<%= submit_tag("Delete Page") %>
+		</div>
+
+		<% end %>
+</div>

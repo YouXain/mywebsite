@@ -1,0 +1,2 @@
+module NotePadHelper
+end

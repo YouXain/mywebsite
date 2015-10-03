@@ -1,0 +1,17 @@
+<div id="part">
+	<h1>Create Note</h1>
+	<%= link_to("Back to List", {:action => 'index'}) %>
+
+	<div class="note_pade new">
+
+	<%= form_for(:note_pad,:url => {:action => 'create'}) do |f| %>
+
+		<%= render(:partial => "form", :locals => {:f => f}) %>
+
+		<div class="form-buttons">
+			<%= submit_tag("Create Note") %>
+		</div>
+
+		<% end %>
+	</div>
+</div>

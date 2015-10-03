@@ -1,0 +1,17 @@
+<div id="part">
+	<h1>NotePad#index</h1>
+
+	<%= link_to("Add New Note", {:action => 'new'}) %>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<%= pluralize(@note_pads.size, 'Note') %> found<br>
+	<ul>
+		<% @note_pads.each do |note_pad| %>
+		<li>
+			<%= link_to(note_pad.title, {:action => 'show', :id => note_pad.id}) %></li>
+		</li>
+		<% end %>
+	</ul>
+
+</div>
+	
+

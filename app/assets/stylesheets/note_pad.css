@@ -1,0 +1,59 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+#npheader {
+    background-color:green;
+    color:white;
+    text-align:center;
+    padding:3px;
+}
+#npnav {
+    line-height:30px;
+    background-color:lightgreen;
+    height:650px;
+    width:200px;
+    float:left;
+    padding:5px; 
+}
+#npsection {
+    margin-top: 0px;
+    min-width:350px;
+    min-height:470px;
+    
+}
+
+#part {
+    padding: 5px;
+    padding-left: 225px;
+}
+
+.npform {
+	min-width:500px;
+	padding-left: 0%;
+	background-color:greenyellow;
+
+}
+.textstyle{
+    font-size: 18pt;
+    width:500px;
+    padding: 5px
+}
+
+textarea{
+	width: 1000px;
+    height: 350px;
+    font-size: 16px;
+    padding: 5px
+
+}
+
+
+#npfooter {
+    background-color:green;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+    float:bottom;
+}
